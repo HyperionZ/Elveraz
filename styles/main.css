@@ -1,4 +1,5 @@
 /*Global*/
+
 * {
     box-sizing: border-box;
 }
@@ -22,8 +23,6 @@ h6 {
     font-family: 'Lato', sans-serif;
 }
 
-
-
 h2 {
     font-size: 3.2rem;
 }
@@ -37,16 +36,50 @@ a {
     color: inherit;
 }
 
+
+/*helpers*/
+
+.ta-center {
+    text-align: center;
+}
+
+
+/*Button*/
+
+.btn {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    border: 3px solid grey;
+    color: grey;
+    padding: 2px 38px 5px;
+    border-radius: 16px;
+}
+
+.btn-primary {
+    color: #7b3fb6;
+    border-color: #7b3fb6;
+}
+
+.btn-secondary {
+    color: #009d78;
+    border-color: #009d78;
+}
+
+
 /*
 Layout
 */
+
 .container {
     max-width: 960px;
     width: 100%;
     margin: auto;
 }
 
+
 /*label*/
+
 .label {
     color: black;
     background: white;
@@ -56,7 +89,9 @@ Layout
     border-radius: 8px;
 }
 
+
 /*btn-social*/
+
 .btn-social {
     width: 2.6rem;
     height: 2.6rem;
@@ -77,7 +112,9 @@ Layout
     color: #1ca1f2;
 }
 
+
 /*HEADER*/
+
 header {
     background-color: #62346f;
 }
@@ -102,13 +139,16 @@ header .header-left {
 
 header .list-share {
     display: flex;
+    font-size: 1.8rem;
 }
 
 header .list-share li {
     margin-left: 2.0rem;
 }
 
+
 /*nav-main*/
+
 .nav-main ul {
     display: flex;
 }
@@ -117,20 +157,26 @@ header .list-share li {
     margin-right: 4.0rem;
 }
 
+
 /*coverpage*/
+
 .coverpage {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 24px;
 }
 
 .coverpage .articles {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 33.33%;
+    padding-left: 10px;
 }
 
 
 /*Articles*/
+
 .post {
     position: relative;
 }
@@ -167,7 +213,27 @@ header .list-share li {
     margin-bottom: 2.0rem;
 }
 
+.post .time-social time {
+    font-size: 1.1rem;
+}
+
+.post img {
+    width: 100%;
+    display: block;
+}
+
+
 /*post-one*/
+
+.post-one {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.post-one .text {
+    right: 10px;
+}
+
 .post-one h2 {
     display: inline-block;
     align-self: flex-start;
@@ -188,7 +254,20 @@ header .list-share li {
     line-height: 3.2rem;
 }
 
+
 /*post-two*/
+
+.post-two {
+    width: 16.67%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.post-two .text {
+    left: 10px;
+    right: 10px;
+}
+
 .post-two h3 {
     font-size: 2rem;
     line-height: 2.4rem;
@@ -207,10 +286,12 @@ header .list-share li {
     margin-top: 0.8rem;
 }
 
+
 /*post-three*/
+
 .post-three h3 {
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     line-height: 2rem;
     padding-right: 7rem;
 }
@@ -226,7 +307,95 @@ header .list-share li {
     right: 8px;
 }
 
+.post-three .time-social {
+    align-items: flex-end;
+}
+
+
 /*main*/
+
 main {
     padding: 2rem 0;
+}
+
+
+/*post-gral*/
+
+.post-gral {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-gral .title {
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.post-gral .post {
+    margin-bottom: 20px;
+}
+
+.post-gral .post .text {
+    padding: 10px;
+}
+
+.post-gral .post h3 {
+    font-size: 1.6rem;
+}
+
+.post-gral img {
+    height: 160px;
+}
+
+
+/*present*/
+
+.present {
+    width: 66.67%;
+    padding-right: 10px;
+}
+
+.present>.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.present .post:nth-child(even) {
+    margin-right: 0;
+}
+
+.present .title {
+    color: #7b3fb6;
+}
+
+
+/*most-read*/
+
+.most-read {
+    width: 33.3%;
+    padding-left: 10px;
+}
+
+.most-read .title {
+    color: #009d78;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #62346f;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
 }
